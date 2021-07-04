@@ -1234,6 +1234,17 @@ Wire Wire Line
 Wire Wire Line
 	2400 8750 2400 9400
 Connection ~ 2400 8750
+$Comp
+L component:DIODE D82
+U 1 1 58E9DD8B
+P 2600 8750
+F 0 "D82" H 2500 8700 40  0000 C CNN
+F 1 "DIODE" H 2600 8800 40  0000 C CNN
+F 2 "ErgoDone:DIODE_SX" H 2600 8750 60  0001 C CNN
+F 3 "" H 2600 8750 60  0000 C CNN
+	1    2600 8750
+	-1   0    0    1   
+$EndComp
 Wire Wire Line
 	2900 8750 2900 8650
 Wire Wire Line
@@ -1243,14 +1254,8 @@ Wire Wire Line
 Connection ~ 2300 8400
 Wire Wire Line
 	2300 8650 2300 8400
-Wire Wire Line
-	1300 8400 2300 8400
-Text Label 1700 9850 3    60   ~ 0
-COL6
-Wire Wire Line
-	1300 9050 2300 9050
 $Comp
-L component:SWITCH_DIODE SX1:8
+L component:SWITCH_PUSH SX1:8
 U 1 1 4FFE1283
 P 2600 8650
 F 0 "SX1:8" H 2750 8760 50  0000 C CNN
@@ -1260,4 +1265,10 @@ F 3 "" H 2600 8650 60  0001 C CNN
 	1    2600 8650
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1300 8400 2300 8400
+Text Label 1700 9850 3    60   ~ 0
+COL6
+Wire Wire Line
+	1300 9050 2300 9050
 $EndSCHEMATC
